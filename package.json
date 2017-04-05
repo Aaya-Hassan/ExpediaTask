@@ -1,0 +1,20 @@
+{
+  "name": "expedia",
+  "version": "1.0.0",
+  "description": "task",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.7.0",
+    "nodemon": "1.11.0"
+  }
+}

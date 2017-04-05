@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EXPEDIA</title>
+	<script src="lib/angular.js" type="text/javascript"></script>
+		<script src="lib/angular-route.js" type="text/javascript"></script> 
+
+	<script src="app.js" type="text/javascript"></script>
+</head>
+<body ng-app="myApp">
+	<br>
+	<center><img src="//www.expedia.com/_dms/header/logo.svg?locale=en_US&amp;siteid=1"></center>
+	<div ng-controller="Expedia">
+		<div ng-repeat="data in key">
+			<div ng-repeat="hotelInfo in data">
+				<img  width="400px" hight="300px" ng-src={{hotelInfo.hotelImageUrl}}  />
+				<h1>{{hotelInfo.hotelName}}</h1>
+				<h3>{{hotelInfo.hotelDestination}}</h3>
+				<h6>{{hotelInfo.hotelStreetAddress}}</h6>
+				<p>{{hotelInfo.description}}</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
