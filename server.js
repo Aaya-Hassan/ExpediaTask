@@ -8,7 +8,7 @@ var app = express();
   app.use(bodyParser.urlencoded({extended: true}));
   
 require('./server/routes.js')(app, express);
-app.use(express.static(__dirname + '/client'));
+app.use(express.static(__dirname + '/app/client'));
 
 // app.use('/', function(req, res){
 //  	res.send(express.static('/client'))
