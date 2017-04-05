@@ -10,9 +10,9 @@ var app = express();
 require('./server/routes.js')(app, express);
 app.use(express.static(__dirname + '/app/client'));
 
-// app.use('/', function(req, res){
-//  	res.send(express.static('/client'))
-//  })
+app.use('/', function(req, res){
+ 	res.send(express.static('/app/client'))
+ })
 
 
 app.set('port', (process.env.PORT || 3000));
