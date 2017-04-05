@@ -3,8 +3,7 @@ var path = require('path')
 var app = express();
 
 require('./server/routes.js')(app, express);
-
-app.use(express.static(path.join('/client')));
+app.use(express.static(__dirname + '/client'));
 
 // app.use('/', function(req, res){
 //  	res.send(express.static('/client'))
