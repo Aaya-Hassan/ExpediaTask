@@ -4,10 +4,10 @@ var app = express();
 
 require('./server/routes.js')(app, express);
 
-app.use(express.static(__dirname + '/client'));
+app.use(express.static('/client'));
 
 app.use('/', function(req, res){
- 	res.send(express.static(__dirname + '/client'))
+ 	res.send(express.static('/client'))
  })
 
 app.set('port', (process.env.PORT || 3000));
