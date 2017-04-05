@@ -6,7 +6,7 @@ require('./server/routes.js')(app, express);
 
 app.use(express.static(__dirname + '/client'));
 
-app.use('*', function(req, res){
+app.use('/', function(req, res){
  	res.sendfile(path.resolve(__dirname, '/client','index.html'))
  })
 
